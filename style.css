@@ -4,7 +4,7 @@
   --primary-blue: hsl(233, 100%, 69%);
   --neutral-dark-gb: hsl(210, 10%, 33%);
   --neutral-gb: hsl(201, 11%, 66%);
-  --font:'Bai Jamjuree', sans-serif;
+  --font: "Bai Jamjuree", sans-serif;
 }
 
 *,
@@ -15,76 +15,138 @@
   font-family: var(--font);
   box-sizing: border-box;
 }
-body{
-  padding: 6.5rem 0;
+body {
+  background-image: url(images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  padding: 6.5rem 0 0 0;
 }
-h3{
+h3 {
   font-size: 2rem;
   color: var(--neutral-dark-gb);
   margin-bottom: 2rem;
 }
-h4{
+h4 {
   color: var(--neutral-dark-gb);
   margin-bottom: 1.45rem;
-
 }
-.logo{
+.logo {
   margin-bottom: 3.8rem;
 }
-.top-space{
+.top-space {
   margin-top: 2rem;
 }
-.container{
+.fix-size {
+  max-width: 43rem;
+}
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: var(--neutral-gb);
 }
-.small-container{
+.small-container {
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 43rem;
   margin-bottom: 2rem;
 }
-header{
+header {
   margin-bottom: 5rem;
 }
-.btn{
+.btn {
   color: #fff;
   border-radius: 2.5rem;
-  font-size: .75rem;
-  padding: .75rem 1rem;
-  margin-right: .5rem;
+  font-size: 0.75rem;
+  padding: 0.75rem 1rem;
+  margin-right: 0.5rem;
   border: none;
   font-weight: bold;
   cursor: pointer;
 }
-.ios{
+.devices{
+  margin: 7.25rem 0 10.9rem 0; 
+}
+.ios {
   background-color: var(--primary-cyan);
 }
-.mac{
+.mac {
   background-color: var(--primary-blue);
 }
-.row-container{
+.row-container {
   display: flex;
   flex-direction: row;
   min-width: 100%;
+  margin-bottom: 10rem;
 }
-.column-container{
+.column-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   margin: 4.68rem;
   width: 100%;
 }
-.column-item{
+.column-item {
   width: 21rem;
   margin-bottom: 4.5rem;
 }
-.pc-bg{
+.pc-bg {
   background-image: url("images/image-computer.png");
   background-position: top right;
   padding: 18rem 22.5rem;
   background-repeat: no-repeat;
+}
+.supercharge{
+  margin-bottom: 5.25rem;
+}
+.perks{
+  margin-bottom: 10rem;
+  display: flex;
+  min-width: 100%;
+  justify-content: center;
+}
+.perks div{
+  text-align: center;
+  max-width: 20.625rem;
+  margin-right: 1rem;
+}
+.perks div img{
+  width: 50px;
+  margin-bottom: 2.875rem;
+}
+.companies{
+  display: flex;
+  min-width: 100%;
+  justify-content: space-around;
+  margin-bottom: 10rem;
+}
+.footer{
+  background-color: #F5F6F8;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 150px;
+}
+.footer img{
+  width: 58px;
+  height: 58px;
+}
+.footer ul{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 30.125rem;
+  row-gap: 1.75rem;
+}
+
+.footer a{
+  text-decoration: none;
+  color: var(--neutral-gb);
+}
+.footer a:hover{
+  color: var(--primary-cyan);
+}
+.social-media a img{
+  width: 25px;
+  height: 25px;
+  margin-right: 25px;
 }
